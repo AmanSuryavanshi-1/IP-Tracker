@@ -104,3 +104,17 @@ body{
     }
     
 }
+
+@media screen and (max-width: 600px) and (min-width:300px){
+    
+h1{
+   
+    font-size: 2rem;
+    margin: 3px;
+}
+.ip-display ,
+.location-display ,
+.geo-display{
+    font-size: calc(1.2rem + 0.5vw);
+}
+}
