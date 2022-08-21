@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Montserrat:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin: 4px;
+    text-shadow: 5px 5px 5px rgba(0,0,0.2);
+    padding-top: 2em;
+}
+
+.background-image{
+    background-image: url("4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position:center;
+}
+.loader{
+    width: 10px;
+    height: 30px;
+    background: white;
+    margin: 4px;
+    
+}
+.loader1{
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.loader2{
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+
+.loader3{
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+.loader-container{
+    display: none;
+}
+
+body{
+    font-family: 'Aboreto', cursive;  
+}
+
+.main-container{
+    
+    padding-top: 3em;
+     display: flex;          
+    justify-content: center;
+    align-items: center;    
+    flex-direction: column;   
+}
+
+.details{
+    text-align: center;
+}
+
+.ip-display ,
+.location-display ,
+.geo-display{
+    font-size: calc(1.2rem + 1vw);
+    color: white;
+    margin: 2rem;
+    padding: 0 50px;
+    text-shadow: 3px 5px 3px rgba(0,0,0.2);
+}
+
+.lookup-btn{
+    border: none;
+    background: white;
+    border-radius: 10px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 1.5rem; 
+    margin: 0.8rem 1.5rem;
+    cursor: pointer;
+    transition: 0.2s linear;
+    text-shadow: 1px 1px 1px rgb(58, 87, 131);
+}
+
+.lookup-btn:hover{
+    background:rgb(67, 83, 116);
+    color:white;
+    opacity: 0.8;
+    text-shadow: 2px 2px 2px rgba(0,0,0.2);
+}
+@keyframes loading {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+    
+}
